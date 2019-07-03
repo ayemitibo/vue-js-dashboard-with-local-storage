@@ -1,0 +1,1310 @@
+
+/*---------------------
+    general styling 
+---------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    color: #263544;
+}
+div.bg-gray{
+    font-family: 'geomanist';
+    font-size: 1.55em;
+    line-height: 1.5em;
+    color: #444;
+    height: 100vh;
+    overflow: hidden;
+        background-image: url(../images/noise.png);
+        background-size: cover;
+        height:100%;
+        background-color: #f8f8f8;
+        height: 100%;
+}
+.btn-styled{
+    color: white;
+    background-color: rgb(5, 5, 46);
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* margin-top: 65px; */
+}
+.site-noise:before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    height: 300%;
+    width: 300%;
+    background: url(../img/noise.png);
+    pointer-events: none;
+    display: block;
+    opacity: .7;
+    -webkit-animation: grain 2s steps(10) infinite;
+    animation: grain 2s steps(10) infinite;
+    will-change: transform;
+}
+.main-container {
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #263544;
+}
+
+#wrapper{
+    background: #efeff6;
+}
+
+.section-padding{
+    margin: 30px 0;
+}
+
+.btn-gray, .btn-gray:hover, .btn-gray:focus {
+    background: #585858;
+    color: #fff;
+    box-shadow: none;
+}
+
+.bg-gray {
+    background: #585858;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #f00;
+    border-color: #f00;
+}
+
+.bt-0 {
+    border-top: none !important;
+}
+
+hr {
+    width: 10%;
+    background: #f00;
+    height: 2px;
+}
+
+
+
+/* ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: rgb(184, 180, 180);
+} */
+
+/* general styling ends here */
+
+
+/*-----------------------------------
+    breadcrumb styling starts here 
+-----------------------------------*/
+ol.breadcrumb .breadcrumb-item {
+    font-size: 12px;
+}
+
+/*-----------------------------------                                              
+    modal styling 
+-----------------------------------*/
+.modal-header {
+    background: #343a40;
+}
+
+.modal-title,
+.modal-dialog button span {
+    color: #fff;
+}
+
+.modal-header h5.modal-title,
+.modal-header .close {
+    font-weight: 500;
+}
+
+.modal-header .close {
+    font-size: 2rem;
+}
+
+
+
+
+/*-------------------------------------
+    pagination styling starts here
+----------------------------------------*/
+.pagination {
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.pagination .page-link {
+    box-shadow: none;
+    color: #263544;
+}
+
+.pagination .page-link:hover {
+    background: #585858;
+    color: #fff;
+}
+
+.pagination .page-item:hover {
+    background: #585858;
+    color: #fff;
+}
+
+.pagination .active .page-link {
+    background: #585858;
+    color: #fff;
+    border: none;
+}
+
+
+/*--------------------------- 
+    styling for input fields 
+---------------------------*/
+input, label, textarea, select {
+    font-size: 13px !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #555 !important;
+    text-transform: none;
+    font-size: 12px;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid rgb(184, 192, 196);
+}
+
+
+/*----------------------------------------------------------
+    styling for table and datatable starts here 
+----------------------------------------------------------*/
+.table.dataTable tbody>tr>td  {
+    vertical-align: middle !important;
+    border-top: none !important;
+}
+
+.table.dataTable tbody>tr>td {
+    vertical-align: middle !important;
+}
+
+table.dataTable, table {
+    border-spacing: 0 30px;
+}  
+
+table.table thead th {
+    background: #555;
+    color: #fff;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+.log{
+    padding: 5px 20px;
+    background-color : white;
+    color : black;
+    border-radius: 3px;
+    width: 150px;
+    text-align: center;
+   
+}
+/* .table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff;
+} */
+
+.table-striped tbody tr:hover {
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+} 
+#app{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+    flex-direction: column;
+}
+#app h1{
+    display: block;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 2em;
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 2em 0;
+}
+
+/*---------------------------------------
+TYPOGRAPHY              
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    font-family: 'poppins', sans-serif;
+    line-height: inherit;
+    color: #263544;
+}
+
+
+/*-----------------------------------------
+    login/signup styling
+------------------------------------------*/
+#login, #signup{
+    background-image: url(../images/on.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#login .login,  #signup .signup{
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    padding: 0 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login .login .form-check,
+#signup .signup .form-check {
+    color: #333;
+    font-size: 12px;
+    padding-left: 30px;
+    padding-top: 6px;
+}
+
+#login .login .down a,
+#signup .signup .down a {
+    color: #333;
+    font-size: 13px;
+}
+
+#login .login .down a:hover,
+#signup .signup .down a:hover {
+    text-decoration: underline;
+}
+
+#signup .signup ul li span{
+    color: #333;
+    font-size: 13px;
+}
+
+/*--------------------------------------
+    nav tabs styling starts here 
+--------------------------------------*/
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #dc3545;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #dc3545;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+    border-bottom: 3px solid #dc3545;
+}
+
+/*-------------------------------- 
+    navbar styling starts here 
+--------------------------------*/
+.navbar.navbar-6 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger8.svg?color=dc3545');
+}
+
+.navbar.navbar-6 .nav-item img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+}
+
+.navbar #navbarDropdown .fa {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    vertical-align:  middle;
+    color: #585858;
+}
+
+.navbar.navbar-6 #menu-toggle {
+    font-size: 10px;
+}
+
+.navbar.navbar-6 .nav-item .badge {
+    color: #fff;
+    background: #dc3545;
+    border-radius: 50%;
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    left: -10px;
+}
+.successMessage{
+    position: fixed;
+    top: 10px;
+    right: 7px;
+    background-color: #69dc69;
+    box-shadow: 20px 20px 5px transparent;
+    color: white;
+    width: 200px;
+    height: 30px;
+    display: none;
+    z-index: 1;
+    text-align: center;
+    border-radius: 0 0 0 10px;
+    line-height: 30px;
+}
+.red{
+    position: fixed;
+    top: 10px;
+    right: 7px;
+    background-color: red;
+    box-shadow: 20px 20px 5px transparent;
+    color: white;
+    width: 300px;
+    height: 30px;
+    display: none;
+    z-index: 1;
+    text-align: center;
+    border-radius: 0 0 0 10px;
+    line-height: 30px;
+}
+#wrapper .dropdown-menu {
+    color: #263544;
+    width: auto;
+    min-width: 150px;
+    max-width: 700px;
+    padding: 8px 0;
+}
+
+#wrapper .dropdown-menu .dropdown-item {
+    color: #808080;
+    font-size: 13px;
+    padding: .8rem 1.5rem;
+}
+
+#wrapper .dropdown-menu .dropdown-item:hover {
+    background: #585858;
+    border-left: 5px solid #dc3545;
+    color: #fff;
+}
+
+.navbar.navbar-6 #title {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #808080;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    font-size: 13px;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.navbar.navbar-6 .nav-item .text-danger {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    padding: .8rem 1.2rem;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.navbar {
+    padding: 1rem 1.6rem;
+    border-bottom: 1px solid rgb(229, 239, 255);
+    background-color: rgb(255, 255, 255);
+    height: 66px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #263544;
+}
+
+/*-------------------------------------
+    sidebar styling starts here 
+-------------------------------------*/
+.sidebar-wrapper {
+    max-height: 100vh;
+    margin-left: -18rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background: #8E0E00;
+}
+
+.sidebar-wrapper .list-group {
+    width: 18rem;
+}
+
+.page-content-wrapper {
+    min-width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #f6f9ff;
+}
+
+#wrapper.toggled .sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .sidebar-wrapper {
+        margin-left: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled .sidebar-wrapper {
+        margin-left: -18rem;
+    }
+}
+
+.sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.sidebar-wrapper .sidebar-heading img{
+    width: 14rem;
+}
+
+.sidebar-wrapper .other-contents {
+    margin: 30px 0;
+    color: #dc3545;
+    font-size: 14px;
+}
+
+.sidebar-wrapper .other-contents a{
+    color: #b7c0cd;
+}
+
+.sidebar-wrapper .other-contents {
+    margin: 25px 0;
+}
+
+.sidebar-wrapper .other-contents img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    margin-bottom: 10px;
+}
+
+.sidebar-wrapper .sidebar-heading span{
+    background: #dc3545;
+    padding: 10px 5px;
+    font-size: 1.4rem;
+}
+
+.sidebar-wrapper .list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: none;
+}
+
+.sidebar-wrapper .list-group-item-action {
+    color: #fff;
+    text-align: inherit;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.sidebar-wrapper .list-group-item-action:hover{
+    background: rgba(20, 20, 20, 0.5);
+    border-left: 5px solid #dc3545;
+    color: #fff;
+}
+#table{
+    width: 100%;
+    margin-top : 20px;
+}
+table,td{
+    /* border-bottom: 1px solid black; */
+    border-collapse: collapse;
+}
+.floated {
+    text-align: right;
+}
+.floated.margin{
+    font-weight: 900;
+    font-size: 16px;
+    color: #dac9c9;
+}
+.margin{
+    padding: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+
+.sidebar-wrapper .list-group-item-action:focus{
+    background: rgba(20, 20, 20, 0.5);
+    border-left: 5px solid #dc3545;
+    color: #fff;
+}
+
+.sidebar-wrapper .list-group-item.active {
+    z-index: 2;
+    background: rgba(20, 20, 20, 0.5);
+    border: none;
+    border-left: 5px solid #dc3545;
+    color: #fff;
+}
+
+.sidebar-wrapper .fa-ellipsis-h {
+    color: #bdb7b7;
+}
+
+.sidebar-wrapper .card {
+    background: #585858;
+    padding: 5px 15px;
+}
+
+.sidebar-wrapper .card  a{
+    font-size: 13px;
+    color:  #b7c0cd;
+    margin: 5px 10px;
+    transition: all .3s ease-in-out;
+}
+
+.sidebar-wrapper .card a:hover {
+    color: #fff;
+}
+
+.sidebar-wrapper .bg-danger,
+.sidebar-wrapper .fa-ellipsis-h {
+    position: absolute;
+    left: 208px;
+    bottom: 14px;
+}
+
+/*---------------------------
+    dadshboard content 
+----------------------------*/
+.default{
+    margin-top: 30px;
+}
+
+.default .bg1{
+    background: #fff;
+}
+
+.default .box{
+    padding: 50px 1px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+}
+
+.default .box:hover {
+    background: #585858;
+    top: -15px;
+}
+
+.default .bg2 {
+    background: #585858;
+    color: #fff;
+    top: 15px;
+}
+
+.default .box li {
+    margin-left: 15px;
+}
+
+.default .box li span.small{
+    font-size: 35px;
+    font-weight: 700;
+    color: #263544;
+}
+
+.default .box li span.faint {
+    font-size: 20px;
+    font-weight: 400;
+    color: #263544;
+}
+
+.default div i{
+    font-size: 60px;
+    margin-bottom: 24px;
+    color: #dc3545;
+}
+
+.default .bg2 li span.small {
+    color: #fff;
+}
+
+.default .bg2 li span.faint{
+    color: #fff;
+}
+
+.default .box:hover li span.small {
+    color: #fff;
+}
+
+.default .box:hover li span.faint {
+    color: #fff;
+}
+
+
+/*-----------------------------------
+    members styling starts here 
+-----------------------------------*/
+#members .members{
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    padding: 35px 8px;
+    margin-left: 18px;
+}
+
+#members .members img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 25px;
+}
+
+#members .members ul.buttons{
+    justify-content: space-around;
+}
+
+#members .members ul.buttons li a{
+    font-size: 11px;
+}
+
+#members .members .member-thumb ul li.first {
+    color: #dc3545;
+    font-size: 13px;
+}
+
+#members .members .member-thumb ul li.second {
+    color: #263544;
+    font-size: 11px;
+}
+
+
+/*------------------------------------------
+    Profile page styling starts here
+-----------------------------------------*/
+#editProfile .user {
+    position: relative;
+    padding-bottom: 48px;
+    background-color: #fff;
+    box-shadow: 0 12px 20px 1px rgba(64, 64, 64, .09);
+}
+
+#editProfile .user .user-profile .user-image img,
+.profile .profile-container .user-image img {
+    display: block;
+    width: 100%;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .15);
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+#editProfile .user .user-profile .user-name,
+.profile .user-name {
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+#editProfile .user .user-profile .user-position,
+.profile .user-position {
+    display: block;
+    color: #263544;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.profileContent .list-group-item i {
+    display: inline-block;
+    margin-right: 18px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.profileContent .list-group-item:hover,
+.profileContent .list-group-item:active {
+    background: #e8e8e8;
+    border-left: 5px solid #dc3545 !important;
+    color: #dc3545;
+}
+
+.profileContent .list-group-item {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid #e7e7e7 !important;
+    border-radius: 0 !important;
+    color: #404040;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+}
+
+#editProfile .upload  p{
+    font-size: 11px;
+}
+
+#editProfile .upload input {
+    width: 220px;
+    background: transparent;
+}
+
+#editProfile input:focus, #editProfile textarea:focus {
+    box-shadow: none;
+    border: 2px solid #17a2b8;
+}
+
+.profile .profile-container {
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.profile .user-description {
+    font-size: 12px;
+    color: #263544;
+    font-weight: 400;
+}
+
+.profile .btn-success {
+    font-size: 12px;
+}
+
+.profile .table {
+    font-size: 13px;
+}
+
+/*------------------------------- 
+Project page styling starts here 
+--------------------------------*/
+#viewProject, #viewClient {
+    font-size: 13px;
+}
+
+#viewProject .project-title a{
+    color: #dc3545;
+}
+
+#viewProject a.project-creator {
+    text-decoration: underline;
+}
+
+#viewProject .fa {
+    font-size: 16px;
+}
+
+#viewProject .btn-sm {
+    font-size: 13px;
+}
+
+#viewProject .dropdown-menu .dropdown-item,
+#viewClient .dropdown-menu .dropdown-item {
+    color: #2c4661;
+}
+
+#viewProject .dropdown-menu .dropdown-item:hover,
+#viewClient .dropdown-menu .dropdown-item:hover {
+    background: #f5f5f5;
+    color: #263544;
+    border-left: none;
+}
+
+#viewProject .dropdown-toggle::after,
+#viewClient .dropdown-toggle::after {
+    display: inline-block !important;
+}
+
+
+#ProjectDetailsSingle {
+    font-size: 14px;
+}
+
+#ProjectDetailsSingle .list-group-item {
+    padding: 20px 30px;
+}
+
+#ProjectDetailsSingle .list-group-item .title h5 {
+    margin-bottom: 20px;
+}
+
+#ProjectDetailsSingle .list-group-item .content .badge {
+    margin: 5px;
+}
+
+#ProjectDetailsSingle .scroll{
+    height: 400px;
+    overflow: auto;
+}
+
+#ProjectDetailsSingle .scroll .assignedTo div{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#ProjectDetailsSingle .tasks .table td {
+    padding: 1rem;
+}
+
+#ProjectDetailsSingle .tasks button.diff {
+    margin-bottom: .3rem;
+}
+
+/*------------------------------------------
+    Event page styling starts here 
+------------------------------------------*/
+#events .card{
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    padding: 30px 25px;
+    width: 100%;
+    height: auto;
+    transition: all .3s ease-in-out;
+}
+
+#events .card .calendar .fa-calendar-alt {
+    font-size: 40px;
+    margin-bottom: 30px; 
+    border: 2px solid #585858;
+    border-radius: 50%;
+    padding: 20px;
+    color: #585858;
+    transition: all .5s ease-in-out;
+}
+
+#events .card:hover .calendar .fa-calendar-alt {
+    color: #fff;
+    background: #585858;
+    transition: all .6s ease-in-out;
+}
+
+#events .card h6 {
+    line-height: 1.5;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+#events .card ul.schedule li {
+    color: #263544;
+    font-size: 13px;
+    line-height: 2;
+}
+
+#events .card ul.schedule li i {
+    padding-right: 10px;
+    font-size: 13px;
+    color: #263544;
+}
+
+/*------------------------------------------
+    client page styling starts here 
+------------------------------------------*/
+#clientDetailsSingle .complete .client-img img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+#clientDetailsSingle .complete .clientDet span i {
+    background: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+#clientDetailsSingle .appointment .list-group-item{
+    font-size: 14px;
+}
+
+#clientDetailsSingle .nav-tabs .nav-link,
+#clientDetailsSingle ul.contact li p,
+#clientDetailsSingle ul.contact li h6 {
+    font-size: 14px;
+}
+
+#clientDetailsSingle ul.contact li {
+    padding-bottom: 10px;
+}
+
+#clientDetailsSingle .appointment .list-group-item  .date{
+    padding-top: 10px;
+    color: #93918f;
+    font-size: 11px;
+}
+
+#clientDetailsSingle .table {
+    font-size: 13px;
+}
+
+#clientDetailsSingle .recent-project,
+#clientDetailsSingle .previous-project {
+    font-size: 12px;
+}
+
+/*------------------------------------------
+    styling for chat page starts here 
+------------------------------------------*/
+.app {
+    background-color: #f7f7f7;
+    height: 700px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.side-one {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.app .heading {
+    padding: 10px 16px 10px 15px;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #eee;
+    z-index: 1000;
+}
+
+.app .heading2 {
+    padding: 10px 16px 10px 15px;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.app .sideBar .list-group .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(255, 246, 246);
+    padding: 1rem 2rem;
+    font-size: 12px;
+}
+
+.app .sideBar .list-group {
+    height: 500px;
+    overflow: auto;
+}
+
+.app .sideBar .list-group .list-group-item:hover {
+    background-color: #f2f2f2;
+}
+
+.app .header-dots i {
+    text-align: right;
+    margin: 10px;
+    color: #93918f;
+    cursor: pointer;
+}
+
+.app .fa-2x {
+    font-size: 16px;
+}
+
+.app .heading-avatar {
+    padding: 0;
+    cursor: pointer;
+
+}
+
+.heading-avatar-icon img,
+.conversation img,
+.sideBar .list-group .list-group-item .contact img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.app .searchBox {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 60px;
+    width: 100%;
+}
+
+.app .searchBox-inner {
+    height: 100%;
+    width: 100%;
+    padding: 10px !important;
+    background-color: #fbfbfb;
+}
+
+.app .searchBox-inner input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.app-one .sideBar {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+.app .side-one .sideBar .list-group {
+    width: 100%;
+}
+
+/*Conversation*/
+.conversation {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.08) !important;
+    font-size: 12px;
+}
+
+.app .conversation .heading-name-meta {
+    font-size: 12px;
+}
+
+.app .conversation .message-body {
+    height: 560px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app .conversation .message-body .see-previous{
+    font-size: 12px;
+}
+
+.app .conversation .sender,
+.app .conversation .receiver {
+    margin: 0 20px;
+}
+
+.app .conversation .sender-message {
+    background: #585858;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 25px 0;
+    border-left: 5px solid #dc3545;
+}
+
+.app .conversation .receiver-message {
+    color: #263544;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 25px 0;
+    border-left: 5px solid #263544;
+}
+
+.sender-message div.time,
+.receiver-message div.time {
+    text-align: right;
+    font-size: 12px;
+    color: #dc3545;
+    padding-top: 5px; 
+}
+
+.app .conversation .receiver {
+    margin-left: auto;
+}
+
+.app .conversation .reply-menu {
+    height: 140px;
+    box-shadow: 10px 10px 10px rgb(43, 43, 43);
+}
+
+.app .conversation .reply-menu i{
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+
+/*------------------------------------------------
+    styling for requisition page starts here 
+------------------------------------------------*/
+#requisitionReportSinglePage ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#requisitionReportSinglePage ul  li{
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 220px;
+}
+
+#requisitionReportSinglePage ul li p.top-text span{
+    font-size: 13px;
+    color:#555;
+    font-weight: 100;
+    opacity: .5;
+}
+
+#requisitionReportSinglePage ul li p.bottom-text {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+#requisitionReportSinglePage ul li p.top-text i {
+    color: #f00;
+    opacity: 1 !important;
+    margin-right: 8px;
+    font-size: 13px;
+    border: 1px solid #f00;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+
+
+
+/*----------------------------------------------- 
+    animation for navbar dropdown starts here 
+-----------------------------------------------*/
+@media (min-width: 992px) {
+    .animate {
+        animation-duration: 0.5s;
+        -webkit-animation-duration: 0.5s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
